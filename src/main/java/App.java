@@ -7,14 +7,14 @@ public class App {
                 new AnnotationConfigApplicationContext(AppConfig.class);
 
         HelloWorld bean =
-                (HelloWorld) applicationContext.getBean("helloworld");
+                (HelloWorld) applicationContext.getBean("helloworldBean");
 
         HelloWorld beanUno  =
-                (HelloWorld) applicationContext.getBean("helloworld");
+                (HelloWorld) applicationContext.getBean("helloworldBean");
 
-        Cat koshka = (Cat) applicationContext.getBean("cat");
+        Cat koshka = (Cat) applicationContext.getBean("catBean");
 
-        Cat koshkaUno = (Cat) applicationContext.getBean("cat");
+        Cat koshkaUno = (Cat) applicationContext.getBean("catBean");
 
 
 
